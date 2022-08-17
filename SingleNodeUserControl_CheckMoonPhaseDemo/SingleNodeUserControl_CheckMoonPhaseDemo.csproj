@@ -56,25 +56,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CustomProgressBar">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\CustomProgressBar.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\CustomProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="DateToMoonAge">
       <HintPath>$(UserAssemblyRoot)\DateToMoonAge.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.BasicAppSettings">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\NetEti.BasicAppSettings.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\NetEti.BasicAppSettings.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.Global">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\NetEti.Global.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\NetEti.Global.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.InfoController">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\NetEti.InfoController.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\NetEti.InfoController.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.MVVMini">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\NetEti.MVVMini.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\NetEti.MVVMini.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.ObjectSerializer">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\NetEti.ObjectSerializer.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\NetEti.ObjectSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -87,13 +87,13 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="Vishnu.Interchange">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\Vishnu.Interchange.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\Vishnu.Interchange.dll</HintPath>
     </Reference>
     <Reference Include="Vishnu.ViewModel">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\Vishnu.ViewModel.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\Vishnu.ViewModel.dll</HintPath>
     </Reference>
     <Reference Include="Vishnu.WPF_UI">
-      <HintPath>..\packages\Vishnu_View.5.0.0\lib\Vishnu.WPF_UI.dll</HintPath>
+      <HintPath>..\packages\Vishnu_View.5.1.0\lib\Vishnu.WPF_UI.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
