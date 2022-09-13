@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Vishnu.Interchange;
+using Vishnu.ViewModel;
 
 namespace Vishnu_UserModules
 {
@@ -14,29 +15,35 @@ namespace Vishnu_UserModules
         public SingleNodeUserControl_CheckMoonPhase()
         {
             InitializeComponent();
-            DynamicUserControl_ContentRendered
-              += new RoutedEventHandler(content_Rendered);
+            DynamicUserControl_ContentRendered += new RoutedEventHandler(content_Rendered);
         }
 
         /// <summary>
-        /// Das ViewModell für das Result des zugehörigen Checkers.
+        /// Konkrete Überschreibung von GetUserResultViewModel, returnt ein spezifisches ResultViewModel.
         /// </summary>
-        public ResultViewModel UserResultViewModel { get; set; }
-
-        private void ContentControl_Loaded(object sender, RoutedEventArgs e)
+        /// <param name="vishnuViewModel">Ein spezifisches ResultViewModel.</param>
+        /// <returns></returns>
+        protected override DynamicUserControlViewModelBase GetUserResultViewModel(IVishnuViewModel vishnuViewModel)
         {
-            if (this.DataContext != null)
-            {
-                this.UserResultViewModel = new ResultViewModel((IVishnuViewModel)this.DataContext);
-                ((IVishnuViewModel)this.DataContext).UserDataContext = this.UserResultViewModel;
-            }
+            return new ResultViewModel((IVishnuViewModel)this.DataContext);
+        }
+
+        /// <summary>
+        /// Hier wird aufgeräumt: ruft für alle User-Elemente, die Disposable sind, Dispose() auf.
+        /// </summary>
+        /// <param name="disposing">Bei true wurde diese Methode von der öffentlichen Dispose-Methode
+        /// aufgerufen; bei false vom internen Destruktor.</param>
+        protected override void Dispose(bool disposing)
+        {
+            DynamicUserControl_ContentRendered -= new RoutedEventHandler(content_Rendered);
+            base.Dispose(disposing);
         }
 
         private void content_Rendered(object sender, RoutedEventArgs e)
         {
             if (this.UserResultViewModel != null)
             {
-                this.UserResultViewModel.HandleResultPropertyChanged();
+                (this.UserResultViewModel as ResultViewModel).HandleResultPropertyChanged();
             }
         }
     }
