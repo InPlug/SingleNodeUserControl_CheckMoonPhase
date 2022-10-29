@@ -14,7 +14,7 @@ namespace Vishnu_UserModules.ValueConverter
     /// <remarks>
     /// Autor: Erik Nagel
     ///
-    /// 05.04.2020 Erik Nagel: erstellt
+    /// 05.04.2020 Erik Nagel: erstellt.
     /// </remarks>
     public class MoonAgeToBitmapImage : IMultiValueConverter
     {
@@ -31,7 +31,7 @@ namespace Vishnu_UserModules.ValueConverter
         };
 
         /// <summary>
-        /// Übersetzt eine Knoten-Zustand (Enum) in ein Bild.
+        /// Übersetzt einen Integer für das Mondalter in Tagen in ein Bild.
         /// </summary>
         /// <param name="values">Array: [Mondalter in Tagen][ResourceDictionary mit BitmapImages].</param>
         /// <param name="targetType">Der Zieltyp (BitmapImage).</param>
