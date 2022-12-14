@@ -56,7 +56,7 @@
       <HintPath>..\packages\Vishnu_View.5.1.2\lib\CustomProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="DateToMoonAge">
-      <HintPath>$(UserAssemblyRoot)\DateToMoonAge.dll</HintPath>
+      <HintPath>..\..\DateToMoonAge\DateToMoonAge\bin\Debug\DateToMoonAge.dll</HintPath>
     </Reference>
     <Reference Include="NetEti.BasicAppSettings">
       <HintPath>..\packages\Vishnu_View.5.1.2\lib\NetEti.BasicAppSettings.dll</HintPath>
