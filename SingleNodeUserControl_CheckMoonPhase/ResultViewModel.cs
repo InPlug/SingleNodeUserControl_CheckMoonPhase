@@ -85,7 +85,7 @@ namespace Vishnu_UserModules
             // this._btnXYZ...RelayCommand.UpdateCanExecuteState(this.Dispatcher);
         }
 
-        private void parentViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void parentViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if (e.PropertyName == "Result")
             {

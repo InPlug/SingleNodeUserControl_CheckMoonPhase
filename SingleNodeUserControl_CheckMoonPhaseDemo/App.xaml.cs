@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Vishnu_UserModules
+namespace SingleNodeUserControl_CheckMoonPhaseDemo
 {
     /// <summary>
     /// Interaction logic for App.xaml

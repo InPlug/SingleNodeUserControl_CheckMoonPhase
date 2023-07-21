@@ -10,7 +10,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:localConvert="clr-namespace:Vishnu_UserModules.ValueConverter"
              xmlns:base="clr-namespace:Vishnu.Interchange;assembly=Vishnu.Interchange"
-             xmlns:ctrl="clr-namespace:NetEti.CustomControls;assembly=CustomProgressBar"
+             xmlns:ctrl="clr-namespace:NetEti.CustomControls;assembly=NetEti.CustomProgressBar"
              xmlns:convert="clr-namespace:Vishnu.WPF_UI.ValueConverter;assembly=Vishnu.WPF_UI"
              xmlns:vm="clr-namespace:Vishnu.ViewModel;assembly=Vishnu.ViewModel"
              xmlns:int="clr-namespace:Vishnu.Interchange;assembly=Vishnu.Interchange"

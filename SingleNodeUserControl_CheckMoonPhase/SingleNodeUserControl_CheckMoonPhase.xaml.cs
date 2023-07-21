@@ -43,7 +43,7 @@ namespace Vishnu_UserModules
         {
             if (this.UserResultViewModel != null)
             {
-                (this.UserResultViewModel as ResultViewModel).HandleResultPropertyChanged();
+                ((ResultViewModel)this.UserResultViewModel).HandleResultPropertyChanged();
             }
         }
     }
