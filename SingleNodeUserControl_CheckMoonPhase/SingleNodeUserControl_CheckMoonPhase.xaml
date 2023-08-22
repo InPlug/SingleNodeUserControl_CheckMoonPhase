@@ -1,4 +1,4 @@
-﻿<!-- Sie haben hier Zugriff auf das Layout des gesamte UserControls inklusive aller Vishnu-Standard-Elemente. 
+﻿<!-- Sie haben hier Zugriff auf das Layout des gesamten UserControls inklusive aller Vishnu-Standard-Elemente. 
      Das ist aber in i.d.R völlig unnnötig und kann auch verwirren. Normalerweise können Sie direkt zwischen
      den weiter unten folgenden Kommentaren "Beginn des User-spezifischen Bereiches" und 
      "Ende des User-spezifischen Bereiches" weitermachen.
@@ -50,7 +50,7 @@
             </x:Code>
             <DataTemplate DataType="{x:Type vm:VishnuViewModelBase}">
                 <Border Name="ItemBorder" Background="Transparent" MouseDown="ItemBorder_MouseDown" Visibility="{Binding Visibility}">
-                    <Grid Name="MainGrid"  ToolTip="{StaticResource cmToolTip}"
+                    <Grid Name="MainGrid"
                           ContextMenu="{StaticResource cmContextMenu}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
@@ -63,7 +63,7 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Grid Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
+                        <Grid Grid.Row="0" Grid.Column="0" Margin="0,5,0,0" ToolTip="{StaticResource cmToolTip}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
@@ -168,7 +168,7 @@
                         
                         <!--=============================== Ende des User-spezifischen Bereiches ===============================-->
 
-                        <TextBlock Name="LastRunInfo" Grid.Row="2" Grid.Column="0" Margin="0,5,0,0"
+                        <TextBlock Name="LastRunInfo" Grid.Row="2" Grid.Column="0" Margin="0,5,0,0" ToolTip="{StaticResource cmToolTip}"
                                        Text="{Binding LastRunInfo, StringFormat=letzter Lauf:&#x09;&#x09;{0}}" Padding="5,0,5,5"/>
 
                     </Grid>
