@@ -46,8 +46,8 @@ namespace Vishnu_UserModules.ValueConverter
             }
             int moonAge = (int)values[0];
             ResourceDictionary targets = (ResourceDictionary)(values[1]);
-            int moonPase = this.CalculateImageIndexFromMoonAge(moonAge);
-            BitmapImage img = (BitmapImage)(targets[_moonPaseToImageName[moonPase]]);
+            int moonPhase = this.CalculateImageIndexFromMoonAge(moonAge);
+            BitmapImage img = (BitmapImage)(targets[_moonPaseToImageName[moonPhase]]);
             return img;
         }
 
