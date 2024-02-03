@@ -8,8 +8,8 @@
     <PackageId>NetEti.$(AssemblyName)</PackageId>
     <Title>$(AssemblyName) - Vishnu-UserControl für DateToMoonAge</Title>
     <Description>$(AssemblyName) - Vishnu-UserControl für DateToMoonAge</Description>
-    <Copyright>Copyright © $(Authors) 2015-2023</Copyright>
     <Authors>Erik Nagel</Authors>
+    <Copyright>Copyright © $(Authors) 2015-$([System.DateTime]::Now.Year)</Copyright>
     <Company>NetEti</Company>
     <PackageTags>NetEti Vishnu Plugin Control View DateToMoonAge</PackageTags>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
